@@ -11,8 +11,8 @@ final class PedestrianWay extends HighWay
     public function addVehicule(Vehicle $vehicle): array
     {
         if (($vehicle instanceof Bike) || ($vehicle instanceof skateboard)) {
-            $currentVehicles[] = $vehicle;
+            $this->currentVehicles[] = $vehicle;
         }
-        return $currentVehicles;
+        return $this->currentVehicles;
     }
 }
