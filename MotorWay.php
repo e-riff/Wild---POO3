@@ -10,7 +10,7 @@ final class MotoWay extends HighWay
 
     public function addVehicule(Vehicle $vehicle): array
     {
-        if (!($vehicle instanceof Bike) && !($vehicle instanceof skateboard)) {
+        if (!($vehicle instanceof Bike) && !($vehicle instanceof Skateboard)) {
             $this->currentVehicles[] = $vehicle;
         }
         return $this->currentVehicles;
