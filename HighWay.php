@@ -40,7 +40,7 @@ abstract class HighWay
     }
     public function setCurrentVehicule($currentVehicule)
     {
-        $this->currentVehicule = $currentVehicule;
+        $this->currentVehicule[] = $currentVehicule;
 
         return $this;
     }
