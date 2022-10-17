@@ -13,6 +13,6 @@ final class MotoWay extends HighWay
         if (!($vehicle instanceof Bike) && !($vehicle instanceof skateboard)) {
             $this->currentVehicles[] = $vehicle;
         }
-        return $currentVehicles;
+        return $this->currentVehicles;
     }
 }
